@@ -2,19 +2,20 @@ import random
 
 print("Number guessing game")
 
-# randint function to generate the random number between 1 to 9
-number = random.randint(1, 9)
+# randint function to generate the random number between 1 to 200
+number = random.randint(1, 200)
 
 # number of chances to be given to the user to guess the number
 # or it is the inputs given by user into input box here number of chances are 5
 chances = 0
 print("the number is between",number-1,"and",number+3)
-print("Guess a number (between 1 and 9):")
+print("the square of the number is",number**2)
+print("Guess a number:")
 
 # While loop to count the number of chances
 while chances < 5:
 
-    # Enter a number between 1 to 9
+    # Enter a number between 1 to 200
     guess = int(input("Enter your guess:- "))
 
     # Compare the user entered number with the number to be guessed
